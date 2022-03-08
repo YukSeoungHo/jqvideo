@@ -1,0 +1,143 @@
+@import url(../css/commons/reset.css);
+body{
+    /* overflow: hidden; */
+}
+.rightmenu{
+    width: auto;
+    height: auto;
+    /* border: 1px solid; */
+    position: fixed;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 17;
+}
+.rightmenu ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+}
+.rightmenu ul li{
+    width: 30px;
+    height: 30px;
+    border: 1px solid;
+    box-sizing: border-box;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.rightmenu ul li:hover{
+    background-color: red;
+}
+.on{
+    background-color: red;
+}
+.section{
+    /* width: 100%; */
+    width: calc(100vw - 2px);
+    height: 100vh;
+    /* height: calc(100vh - 4px); */
+    border: 1px solid;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sections .section:nth-child(1){
+background-color: red;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+width: 100%;
+height: 100vh;
+}
+.sections .section:nth-child(1) p.p1{
+    position: absolute;
+   width: 300px;
+    background-color: #fff;
+    text-align: center;
+}
+.sections .section:nth-child(1) video{
+width: 100%;
+height: 100vh;
+/* height: auto; */
+display: block;
+object-fit: cover;
+}
+.sections .section:nth-child(2){
+background-color: green;
+}
+.section.sec2 h1{
+    position: relative;
+    left: -1500px;
+}
+.sections .section:nth-child(3){
+background-color: blueviolet;
+}
+.sections .section:nth-child(4){
+background-color: brown;
+}
+.sections .section:nth-child(5){
+background-color: blue;
+}
+.btn{
+    width: 50px;
+    height: auto;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 19;
+}
+.btn img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.btn:hover{
+    opacity: 0.5;
+}
+.leftmenu{
+    width: 100%;
+    /* max-width: 300px; */
+    height: 100vh;
+    background-color:rgba(80, 211, 48, 0.527);
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 16;
+}
+.leftmenu .gnb{
+    width: 100%;
+    max-width: 300px;
+    padding: 20px;
+    background-color:rgba(15, 162, 182, 0.884);
+    height: 100vh;
+    box-sizing: border-box;
+    
+}
+.leftmenu .gnb>ul{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    gap: 5px;
+
+}
+.leftmenu .gnb>ul>li{
+    background-color: #fff;
+    line-height: 30px;
+    /* border: 1px solid blue; */
+    font-size: 14px;
+    padding: 0 5px;
+    box-sizing: border-box;
+    
+}
+.leftmenu .gnb>ul>li ul.sub{
+    display: none;
+    background-color: #ff0;
+}
+.leftmenu .gnb>ul>li ul.sub li{
+    line-height: 20px;
+    font-size: 12px;
+}
